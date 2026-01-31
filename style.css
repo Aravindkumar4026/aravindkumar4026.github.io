@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fff;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 120px 80px;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero-content span {
+  color: #ff8c00;
+}
+
+.hero-content p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #1a1aff;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.socials {
+  margin-top: 25px;
+}
+
+.socials i {
+  margin-right: 12px;
+  background: #111;
+  color: #00f2ff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Image */
+.hero-image img {
+  width: 350px;
+  border-radius: 50%;
+  background: #ffd500;
+  padding: 20px;
+}
+
+/* Canvas background */
+#network {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
