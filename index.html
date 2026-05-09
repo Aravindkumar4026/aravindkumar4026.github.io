@@ -2,57 +2,249 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Aravind Kumar | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aravind Kumar S | SharePoint & .NET Developer</title>
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Aravind Kumar S home">
+      <span class="brand-mark">AK</span>
+      <span>Aravind Kumar S</span>
+    </a>
 
-<!-- Navbar -->
-<nav class="navbar">
-  <div class="logo">Aravind</div>
-  <ul>
-    <li>Home</li>
-    <li>About</li>
-    <li>Skills</li>
-    <li>Work</li>
-    <li>Experience</li>
-    <li>Contact</li>
-  </ul>
-</nav>
+    <button class="menu-button" type="button" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
-<!-- Hero Section -->
-<section class="hero">
-  <canvas id="network"></canvas>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <div class="hero-content">
-    <h1>Hi There,</h1>
-    <h1>I’m <span>Aravind Kumar</span></h1>
-    <p>I am into <b>Web Development</b></p>
+  <main>
+    <section id="home" class="hero-section">
+      <div class="hero-copy">
+        <p class="eyebrow">SharePoint Developer • .NET • MCP AI Integration</p>
+        <h1>Building Microsoft 365 solutions that make business work simpler.</h1>
+        <p class="hero-summary">
+          I am a SharePoint Developer with 2+ years of experience building Microsoft 365 solutions using
+          SPFx, React.js, TypeScript, C#, ASP.NET MVC, Web API, Microsoft Graph API, Azure AD, and AI-driven MCP integrations.
+        </p>
 
-    <a href="#about" class="btn">About Me</a>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#projects">
+            <i class="fa-solid fa-layer-group"></i>
+            View Projects
+          </a>
+          <a class="secondary-btn" href="#contact">
+            <i class="fa-solid fa-paper-plane"></i>
+            Contact Me
+          </a>
+        </div>
 
-    <div class="socials">
-      <i class="fab fa-linkedin-in"></i>
-      <i class="fab fa-github"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-telegram"></i>
-      <i class="fab fa-instagram"></i>
+        <div class="hero-stats" aria-label="Career overview">
+          <div>
+            <strong>2+</strong>
+            <span>Years Experience</span>
+          </div>
+          <div>
+            <strong>SPFx</strong>
+            <span>React & TypeScript</span>
+          </div>
+          <div>
+            <strong>MCP</strong>
+            <span>AI Tool Integration</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="SharePoint solution showcase">
+        <div class="portal-window">
+          <div class="window-top">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="portal-header">
+            <div>
+              <p>Microsoft 365 Solution</p>
+              <h2>SharePoint Operations Hub</h2>
+            </div>
+            <i class="fa-brands fa-microsoft"></i>
+          </div>
+
+          <div class="metric-grid">
+            <article>
+              <i class="fa-solid fa-file-shield"></i>
+              <strong>DRS</strong>
+              <span>Document Recovery</span>
+            </article>
+            <article>
+              <i class="fa-solid fa-robot"></i>
+              <strong>MCP</strong>
+              <span>AI Server</span>
+            </article>
+            <article>
+              <i class="fa-solid fa-building-columns"></i>
+              <strong>Loan</strong>
+              <span>Management</span>
+            </article>
+          </div>
+
+          <div class="code-panel">
+            <p><span>Graph API</span> connects SharePoint data.</p>
+            <p><span>MCP tools</span> enable AI-driven actions.</p>
+            <p><span>.NET APIs</span> secure business workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-block about-grid">
+      <div class="section-heading">
+        <p class="eyebrow">Professional Summary</p>
+        <h2>SharePoint and .NET developer focused on practical enterprise delivery.</h2>
+      </div>
+      <div class="about-card">
+        <p>
+          I design and develop Microsoft 365 solutions for collaboration, document management, workflow automation,
+          and internal business applications. My experience includes SharePoint Framework, Microsoft Graph API,
+          ASP.NET MVC, Web API, Azure AD authentication, Azure Key Vault, and MCP-based AI integrations.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Current and previous companies</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item current">
+          <div class="timeline-date">Apr 2025 - Present</div>
+          <div class="timeline-content">
+            <span>Current Company</span>
+            <h3>Minuscule Technologies</h3>
+            <p>Software Engineer building SharePoint solutions and maintaining .NET-based applications.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">Apr 2024 - Apr 2025</div>
+          <div class="timeline-content">
+            <span>Previous Company</span>
+            <h3>Alchemy Techsol India Pvt Ltd</h3>
+            <p>Software Engineer working on .NET MVC application development, enhancements, and support activities.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-date">Apr 2023 - Nov 2023</div>
+          <div class="timeline-content">
+            <span>Previous Company</span>
+            <h3>Marlensoft Pvt Ltd</h3>
+            <p>Product Engineer Trainee assisting in application development, debugging, and feature enhancements.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section-block project-band">
+      <div class="section-heading">
+        <p class="eyebrow">Project Showcase</p>
+        <h2>Selected work in SharePoint, AI, and business systems</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-icon"><i class="fa-solid fa-folder-tree"></i></div>
+          <span>SharePoint + .NET</span>
+          <h3>DRS - Document Recovery System</h3>
+          <p>SharePoint-based document management and recovery system with metadata, Graph Search, automation, and secure .NET APIs.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+          <span>MCP + AI</span>
+          <h3>SharePoint MCP Server</h3>
+          <p>AI-ready MCP server for secure SharePoint site, list, library, content type, and search operations through Microsoft Graph API.</p>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon"><i class="fa-solid fa-money-check-dollar"></i></div>
+          <span>.NET Business App</span>
+          <h3>Prolendz - Loan Management System</h3>
+          <p>Loan lifecycle support system covering disbursement workflows, transaction tracking, UTR handling, and issue resolution.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section-block">
+      <div class="section-heading">
+        <p class="eyebrow">Technical Skills</p>
+        <h2>Tools and technologies I work with</h2>
+      </div>
+
+      <div class="skill-grid">
+        <article class="skill-card">
+          <i class="fa-brands fa-microsoft"></i>
+          <h3>SharePoint & Microsoft 365</h3>
+          <p>SharePoint Online, SPFx, CSOM, REST API, PnP PowerShell, Power Automate, Microsoft Graph API.</p>
+        </article>
+        <article class="skill-card">
+          <i class="fa-solid fa-code"></i>
+          <h3>Programming & Backend</h3>
+          <p>C#, ASP.NET MVC, ASP.NET Web API, LINQ, Entity Framework, SQL Server.</p>
+        </article>
+        <article class="skill-card">
+          <i class="fa-solid fa-cloud"></i>
+          <h3>Cloud & Azure</h3>
+          <p>Azure AD authentication, Azure WebJobs, Azure Storage Accounts, Azure Key Vault, Azure App Services.</p>
+        </article>
+        <article class="skill-card">
+          <i class="fa-solid fa-palette"></i>
+          <h3>Frontend</h3>
+          <p>React.js, JavaScript, TypeScript, jQuery, HTML, CSS, responsive UI implementation.</p>
+        </article>
+        <article class="skill-card">
+          <i class="fa-solid fa-brain"></i>
+          <h3>AI Modern Integration</h3>
+          <p>Retrieval Augmented Generation, Model Context Protocol, AI-ready tool design, structured business automation.</p>
+        </article>
+        <article class="skill-card">
+          <i class="fa-solid fa-certificate"></i>
+          <h3>Certification</h3>
+          <p>Model Context Protocol Advanced Topics, issued by Anthropic, February 2026.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer-section">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Let’s build clean SharePoint and .NET solutions.</h2>
+      <p>Chennai, Tamil Nadu • 6385128264 • aravindkumarrocks86@gmail.com</p>
     </div>
-  </div>
+    <div class="social-links">
+      <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:aravindkumarrocks86@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </footer>
 
-  <div class="hero-image">
-    <img src="https://i.imgur.com/7Qp9YkH.png" alt="avatar">
-  </div>
-</section>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
