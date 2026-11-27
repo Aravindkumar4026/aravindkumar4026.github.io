@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Aravind · 60-Day Training Plan</title>
+<style>
+*{box-sizing:border-box} [hidden]{display:none!important}
+:root{font-family:system-ui,sans-serif;background:#101211;color:#f2f4ed;--card:#191c1a;--line:#343b35;--muted:#b2beb2;--lime:#d0f879;--soft:#232b20}
+body{margin:0} a{color:var(--lime)} button,input,select,textarea{font:inherit;color:inherit} button{cursor:pointer} button,input,select,textarea,.file{border:1px solid var(--line);border-radius:9px;background:#212621;padding:10px 13px} button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible,.file:focus-within{outline:2px solid var(--lime);outline-offset:3px} button:hover,.file:hover{border-color:var(--lime)} .primary{background:var(--lime);color:#15200d;font-weight:750;border-color:var(--lime)}
+.shell{max-width:1160px;margin:auto;padding:22px clamp(14px,4vw,48px) 48px}.top,.spread,.actions{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}.top{padding:0 0 18px;border-bottom:1px solid var(--line)} .brand{font-size:14px;font-weight:760;letter-spacing:.04em}.mark{display:inline-grid;place-items:center;background:var(--lime);color:#172014;border-radius:7px;width:31px;height:31px;margin-right:9px}.tabs{display:flex;flex-wrap:wrap;gap:6px}.tabs button{background:transparent;border-color:transparent;color:var(--muted);padding:9px 11px}.tabs button[aria-pressed=true]{color:var(--lime);background:var(--soft);border-color:var(--line)}
+.hero{display:grid;grid-template-columns:1fr minmax(260px,.49fr);gap:22px;align-items:end;padding:35px 0 25px}.meta,.tag{font-size:.79rem;font-weight:750;letter-spacing:.085em;text-transform:uppercase;color:var(--lime)} h1,h2,h3,h4,p{margin:0} h1{font-size:clamp(2.35rem,7vw,5.2rem);line-height:.98;letter-spacing:-.07em;margin:10px 0 13px} h2{font-size:clamp(1.35rem,3vw,2rem);letter-spacing:-.035em} h3{font-size:1.12rem} h4{font-size:.98rem} p,li{line-height:1.5}.muted,small{color:var(--muted)}.progress-card,.panel,.exercise{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}.progress-card strong{font-size:1.6rem}.progress-card label{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}.progress-card input{min-width:0} progress{display:block;width:100%;height:9px;margin:9px 0;accent-color:var(--lime)}
+.layout{display:grid;grid-template-columns:minmax(235px,.65fr) minmax(0,1.6fr);gap:16px;align-items:start}.layout>*{min-width:0}.panel>div+div,.panel>p+p,.panel>p+div,.panel>h2+p,.panel>h3+p{margin-top:10px}.week{display:flex;align-items:center;justify-content:space-between;gap:6px;margin:12px 0}.week button{padding:8px 12px}.week button:disabled{opacity:.4;cursor:default}.days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}.days button{padding:8px 0;min-height:42px;font-size:.86rem}.days button.done{color:#d0f879;background:#263322}.days button[aria-current=true]{outline:2px solid var(--lime);outline-offset:-2px}.days .rest{border-style:dashed}.legend{font-size:.78rem;margin:10px 0 0}.legend b{color:var(--lime)} .phase{border-top:1px solid var(--line);padding-top:14px;margin-top:15px}.phase p{font-size:.89rem;margin-top:5px}.section{margin-top:14px}.day-head{display:grid;gap:8px}.exercise-list{display:grid;gap:9px;margin-top:14px}.exercise{padding:0}.exercise summary{cursor:pointer;padding:13px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px;list-style:none}.exercise summary::-webkit-details-marker{display:none}.exercise summary::after{content:'+';grid-column:2;grid-row:1;color:var(--lime);font-size:1.2rem}.exercise[open] summary::after{content:'−'}.exercise summary small{display:block;margin-top:2px}.exercise-body{padding:0 13px 13px;display:grid;gap:9px}.poses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.poses figure{margin:0;text-align:center;border-radius:8px;background:#222920;color:#d0f879;padding:3px 3px 6px;font-size:.76rem}.poses svg{display:block;width:100%;height:clamp(100px,19vw,170px)} .exercise-body p{font-size:.91rem}.log{margin-top:14px}.log label{display:grid;gap:5px}.log textarea, #trainer textarea{width:100%;resize:vertical}.log .actions{margin-top:10px;justify-content:flex-start}.log-status{font-size:.88rem;color:var(--lime)}
+.content{max-width:850px}.content .panel+.panel{margin-top:12px}.content ul{padding-left:19px;margin:8px 0}.content li+li{margin-top:7px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.form-grid label,.field{display:grid;gap:6px}.full{grid-column:1/-1}.form-grid input,.form-grid select{width:100%}.review-actions{margin-top:12px;justify-content:flex-start}.file{display:inline-block;cursor:pointer}.file input{width:1px;height:1px;padding:0;position:absolute;opacity:0}.status{min-height:1.5em;margin-top:9px;color:var(--lime);overflow-wrap:anywhere} .privacy{font-size:.86rem}.plan-line{padding:7px 0;border-bottom:1px solid var(--line)}
+@media(max-width:720px){.hero,.layout{grid-template-columns:1fr}.hero{padding-top:24px;gap:14px}.shell{padding-top:14px}.panel{padding:14px}.form-grid{grid-template-columns:1fr}} @media print{body{color:#111;background:white}.shell{max-width:none;padding:0}.top,.hero,main>section:not(#trainer),.review-actions,.privacy,.status,#email-form{display:none!important} #trainer{display:block!important}.panel{background:white;border-color:#888;break-inside:avoid}.muted,small,.meta,.tag{color:#444} input,select,textarea{color:#111;background:white;border-color:#888}}
+</style>
+<div class="shell">
+<header class="top"><div class="brand"><span class="mark" aria-hidden="true">A</span>ARAVIND / TRAINING LOG</div><nav class="tabs" aria-label="Training sections"><button type="button" data-tab="workout" aria-pressed="true">Workout</button><button type="button" data-tab="recovery" aria-pressed="false">Recovery</button><button type="button" data-tab="trainer" aria-pressed="false">Trainer review</button></nav></header>
+<section class="hero" aria-labelledby="title"><div><p class="meta">Muscle gain · 60 days</p><h1 id="title">The training plan.</h1><p class="muted">Six lifting sessions and one recovery day, based on your gym chart.</p></div><div class="progress-card"><div class="spread"><span>Days completed</span><strong id="count" aria-live="polite">0 / 60</strong></div><progress id="progress" max="60" value="0" aria-label="Days completed"></progress><label for="start"><small>Plan start date</small><input id="start" type="date"></label><small>Progress is saved in this browser.</small><p id="storage-status" class="status" hidden></p></div></section>
+<main>
+<section id="workout" class="layout"><aside class="panel"><h2>Training calendar</h2><div class="week"><button type="button" id="prev" aria-label="Previous week">←</button><strong id="week"></strong><button type="button" id="next" aria-label="Next week">→</button></div><div class="days" id="days" aria-label="Days in selected week"></div><p class="legend"><b>✓</b> Complete · Dashed = recovery</p><div class="phase"><h3 id="phase-title"></h3><p class="muted" id="phase-text"></p></div></aside><div class="panel"><div id="day-head" class="day-head"></div><div id="exercise-list" class="exercise-list"></div><div class="log"><label for="log">Day log <small>Record sets, reps, load, or how you recovered.</small><textarea rows="3" id="log" placeholder="Example — Shoulder press: 8 kg per hand, 10 / 9 reps"></textarea></label><div class="actions"><button type="button" class="primary" id="complete">Mark day complete</button><span class="log-status" id="log-status" aria-live="polite"></span></div></div></div></section>
+<section id="recovery" class="content" hidden>
+<div class="panel"><h2>Warm up and lift with control</h2><ul><li>Take 5–10 minutes of easy walking or cycling, including on leg day if comfortable. Before the first big lift, do one or two lighter practice sets. Your chart calls for a treadmill run on non-leg days. Keep that easy if you choose to run.</li><li>Use a controlled lowering phase and a comfortable range. Exhale through the effort and inhale on the return. End the set when your technique changes or you can no longer control the load.</li><li>Rest about 2 minutes for presses, squats, rows and hinges. Allow more if your next set needs it. Rest roughly 60–90 seconds for smaller lifts and core work.</li><li>Stop an exercise if you feel sharp or worsening pain. Have your trainer check unfamiliar movements, especially the squat and hip hinge. Get medical advice for persistent pain or an active injury before increasing load.</li></ul></div>
+<div class="panel"><h2>Recover between sessions</h2><ul><li>Day 7 is recovery. Take an easy walk and do gentle mobility if you feel like it. Aim for at least 7 hours of sleep if you’re an adult, drink water regularly, and include a protein source in meals.</li><li>If soreness changes your movement or your performance keeps dropping, take an extra recovery day or reduce working sets. Skip missed sessions or resume with the next one you can do. Avoid stacking two sessions to catch up.</li><li>Keep day 6 pressing lighter than day 4. Day 5 uses a small amount of back work after hamstrings. Keep it easy when you’re still recovering from day 3.</li><li>Increase weight by the smallest available step when you reach the top of the rep range on every set and can still do 2 clean reps. If the next jump is too large, stay at the current weight and repeat the target.</li></ul></div>
+<div class="panel"><h2>Before trainer approval</h2><p>The chart’s sets and reps are blank. This draft supplies starter targets and combines some overlapping variations. It treats the Day 2 “S/m squat” as a Smith machine squat and the unclear Day 5 hinge as a dumbbell Romanian deadlift. Confirm both with your trainer. Form images are simplified key positions.</p><p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12965823/">ACSM resistance training guidance</a> · <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/weight-training/art-20045842">Mayo Clinic lifting technique</a> · <a href="https://www.cdc.gov/sleep/about/index.html">CDC sleep guidance</a></p></div>
+</section>
+<section id="trainer" class="content" hidden>
+<div class="panel"><h2>Trainer review &amp; acknowledgement</h2><p>Send your trainer this HTML file and open a draft email below. Ask them to review the plan, type their name and decision here, and send you their exported review. You can import their returned file on this screen.</p><div id="review-plan"></div></div>
+<div class="panel" id="email-form"><label for="email" class="field">Trainer email<input id="email" type="email" placeholder="trainer@example.com"></label><div class="actions review-actions"><button class="primary" type="button" id="invite">Open email draft</button><button type="button" id="copy-invite">Copy invite text</button></div><p id="invite-status" class="status" role="status"></p></div>
+<div class="panel"><form id="review-form"><div class="form-grid"><label>Trainer name<input id="trainer-name" required maxlength="100" autocomplete="name"></label><label>Review date<input id="review-date" type="date" required></label><label>Review decision<select id="decision" required><option value="">Choose a decision</option><option>Approved</option><option>Changes requested</option></select></label><label class="full">Corrections or notes<textarea id="review-notes" rows="3" maxlength="2000"></textarea></label><label class="full">Typed signature<input id="signature" required maxlength="100" placeholder="Type your full name to acknowledge this review"></label></div><div class="actions review-actions"><button class="primary" type="submit">Export signed review</button><label class="file">Import trainer review<input id="import-review" type="file" accept=".json,application/json" aria-label="Import trainer review"></label><button type="button" id="print-review">Print review</button></div></form><p class="privacy muted">The typed signature is an acknowledgement without identity verification. Email drafts open in your mail app. Your daily log stays in this browser and is excluded from the review file.</p><p id="review-status" class="status" role="status"></p></div>
+</section>
+</main>
+</div>
+<script>
+'use strict';
+// Each form drawing uses head, shoulder, elbow, wrist, hip, knee and ankle coordinates.
+const E = {
+  shoulder:['Dumbbell shoulder press','Front and side delts · triceps',2,'8–12','Seated or standing, start with wrists above elbows and elbows slightly forward. Press up without leaning back.','Lower to a comfortable depth and keep ribs stacked over hips.','press',120],
+  lateral:['Dumbbell lateral raise','Side delts',2,'12–15','With a soft bend in your elbows, raise the dumbbells slightly forward of your sides to about shoulder height.','Lead with your elbows and avoid swinging or shrugging.','lateral',75],
+  face:['Cable face pull','Rear delts · upper back',2,'12–15','Set the rope near face height. Pull the ends toward your temples, letting the elbows move outward.','Keep your ribs down and return slowly.','face',75],
+  shrug:['Dumbbell shrug','Upper traps',2,'10–15','Hold dumbbells at your sides. Lift both shoulders straight up and pause briefly.','Keep arms long and lower without rolling your shoulders.','shrug',75],
+  legraise:['Bent-knee leg raise','Abdominals · hip flexors',2,'8–12','Lie on your back and bring bent knees toward your torso. Lower only as far as you can keep your lower back controlled.','Move slowly. A smaller range is fine.','legraise',60],
+  plank:['Forearm plank','Abdominals · trunk stabilizers',2,'20–40 sec','Set elbows under shoulders and extend your legs. Brace, lightly squeeze your glutes and breathe steadily.','Keep your hips level. End the hold when your lower back starts to sag.','plank',60],
+  squat:['Smith machine squat','Quads · glutes',2,'8–12','Set the safety stops. Keep pressure through the entire foot as you sit down between your hips.','Track knees in the same direction as toes and use a depth you can control.','squat',120],
+  legpress:['Leg press','Quads · glutes',2,'10–15','Set feet roughly shoulder-width. Lower the sled while your hips and lower back stay against the pad.','Press through the whole foot without snapping the knees straight.','legpress',120],
+  split:['Bulgarian split squat','Quads · glutes',2,'8–10 / side','Rest the rear foot on a low bench. Lower under control by bending the front knee and hip.','Keep the front foot planted and start with bodyweight if balance is difficult.','split',120],
+  extension:['Leg extension','Quads',2,'12–15','Align your knee with the machine pivot. Place the pad just above the ankle and straighten smoothly.','Keep hips on the seat and return without dropping the stack.','extension',75],
+  abduct:['Hip abduction machine','Side glutes',2,'12–15','Sit tall with the pads against your outer thighs. Open your knees smoothly and return with control.','Keep your pelvis and torso steady.','abduct',75],
+  pulldown:['Front lat pulldown','Lats · biceps',2,'8–12','Anchor your thighs and pull the bar toward your upper chest with elbows moving down.','A slight lean is fine. Avoid rocking backward or pulling behind your head.','pulldown',120],
+  row:['Dumbbell row','Lats · upper back · biceps',2,'8–12 / side','Support one hand on a bench. Hinge with a steady torso and pull the dumbbell toward your hip.','Keep your chest facing down and lower until the arm is long.','row',120],
+  cableRow:['Seated cable row','Mid-back · lats · biceps',2,'10–12','Sit tall and pull the handle toward the lower ribs. Let the arms reach forward under control.','Keep your trunk stable through the rep.','cablerow',120],
+  curl:['Dumbbell curl','Biceps',2,'10–15','Turn your palms up and curl the dumbbells while keeping elbows near your sides.','Lower slowly and avoid using your hips for momentum.','curl',75],
+  hammer:['Hammer curl','Brachialis · forearms · biceps',2,'10–15','Keep palms facing each other and curl the dumbbells with elbows close to your sides.','Keep wrists neutral and lower through a comfortable range.','curl',75],
+  chest:['Dumbbell chest press','Chest · triceps · front delts',3,'8–12','On a flat bench, plant your feet. Lower with elbows angled slightly inward, then press up over your chest.','Keep wrists stacked over elbows and your shoulder blades supported.','chest',120],
+  incline:['Incline dumbbell press','Upper chest · front delts · triceps',2,'8–12','Use a low incline. Lower the dumbbells toward the upper chest with wrists over elbows.','Keep your shoulders supported and press smoothly over the chest.','incline',120],
+  fly:['Pec deck fly','Chest',2,'12–15','Set handles about chest height. Bring your arms together in an arc with soft elbows.','Return only to a comfortable stretch and keep your back supported.','fly',75],
+  pushdown:['Cable triceps pushdown','Triceps',2,'10–15','Pin your upper arms near your ribs. Extend elbows until your hands are near your thighs.','Let elbows bend on the way back without moving your shoulders.','pushdown',75],
+  overhead:['Overhead triceps extension','Triceps · long head',2,'10–15','Hold one dumbbell securely overhead. Bend the elbows to lower it behind your head, then extend.','Keep ribs down and use a comfortable shoulder range.','overhead',75],
+  rdl:['Dumbbell Romanian deadlift','Hamstrings · glutes',2,'8–12','Soften the knees and push hips back while sliding dumbbells close to your legs. Stand tall by driving hips forward.','Stop lowering when your hamstrings limit the hinge or your back position changes.','rdl',120],
+  legcurl:['Lying leg curl','Hamstrings',2,'10–15','Set the pad just above your heels and align knees with the pivot. Curl the pad toward your glutes.','Keep hips on the pad and return slowly.','legcurl',75],
+  lunge:['Reverse lunge','Glutes · quads',2,'8–10 / side','Step backward and bend both knees under control. Push through the front foot to stand.','Keep your front knee tracking with your toes and use support if needed.','lunge',90],
+  calf:['Standing calf raise','Calves',2,'12–18','Hold a support. Lift your heels, pause briefly, then lower slowly.','Keep pressure across the ball of the foot and avoid bouncing.','calf',75],
+  pullup:['Assisted pull-up','Lats · upper back · biceps',2,'6–10','Use enough machine assistance for smooth reps. Pull elbows down until your chin approaches the bar.','Lower under control and keep your legs quiet.','pullup',120],
+  machinePress:['Machine shoulder press','Front and side delts · triceps',2,'10–12','Set the seat so handles start near shoulder height. Press smoothly and lower to a comfortable depth.','Keep your back supported and avoid shrugging.','press',120],
+  rear:['Rear delt fly','Rear delts · upper back',2,'12–15','Face the pad of a reverse pec deck with hands near shoulder height. Sweep the arms out with soft elbows.','Keep your chest on the pad and avoid shrugging.','rear',75],
+  dip:['Assisted dip','Triceps · chest',2,'8–12','Use enough assistance to control the lowering. Bend elbows to a comfortable depth, then press back up.','Stop before the front of the shoulder pinches. Keep the shoulders steady.','dip',120]
+};
+const sessions = [
+  ['Shoulders + core','Side and rear delts, upper traps, abdominals','Start with the overhead press. Finish with core control.', ['shoulder','lateral','face','shrug','legraise','plank']],
+  ['Legs · quad focus','Quads, glutes, hip abductors','Warm up with easy cycling or walking. Finish with an easy forward walk if you want cardio. Ask your trainer to demonstrate the chart’s backward treadmill walk before trying it.', ['squat','legpress','split','extension','abduct']],
+  ['Back + biceps','Lats, mid-back, biceps, forearms','Use a controlled pull and keep the torso steady for each row.', ['pulldown','row','cableRow','curl','hammer']],
+  ['Chest + triceps','Chest, triceps, front delts','Start with the flat press and use a comfortable chest stretch on the fly.', ['chest','incline','fly','pushdown','overhead']],
+  ['Pull + hamstrings','Hamstrings, glutes, calves, lats','Finish with up to 10 minutes of easy cycling if you feel recovered. Keep assisted pull-ups submaximal.', ['rdl','legcurl','lunge','calf','pullup']],
+  ['Push · lighter day','Chest, shoulders, triceps','Keep about 3 clean reps in reserve on every set, especially on presses and dips.', ['chest','machinePress','dip','lateral','rear']],
+  ['Recovery','Rest or easy movement','Take an easy walk or try gentle mobility. Log your recovery and mark the day complete when done.', []]
+];
+const phases = [
+  ['Weeks 1–2 · Learn the lifts','Use two working sets per movement (one set is fine while learning). Start with about 3 clean reps in reserve.'],
+  ['Weeks 3–6 · Build gradually','Use the listed sets and keep 2–3 clean reps in reserve. Add reps first and then the smallest weight increase.'],
+  ['Weeks 7–8 · Consolidate','Keep the listed sets if you are recovering well. If fatigue builds, reduce one set per exercise or take an extra rest day.'],
+  ['Days 57–60 · Review','Complete the first four sessions if recovered. Compare your logs with week 1 and record what to keep or adjust with your trainer.']
+];
+const stand = [[80,24],[80,39],[81,59],[81,79],[80,69],[81,86],[82,105]];
+const hang = [[83,54],[83,68],[74,46],[64,22],[83,87],[88,96],[101,99]];
+const seated = [[77,26],[77,41],[83,57],[100,61],[77,73],[104,75],[105,105]];
+const pose = (base, changes) => base.map((point,index) => changes[index] || point);
+const frames = {
+  press:[pose(stand,{2:[58,53],3:[57,32]}),pose(stand,{2:[65,21],3:[68,9]}),'front','db'],
+  lateral:[pose(stand,{2:[71,59],3:[70,80]}),pose(stand,{2:[58,45],3:[39,43]}),'front','db'],
+  face:[pose(stand,{2:[102,39],3:[123,39]}),pose(stand,{2:[93,49],3:[93,32]}),'side','cable'],
+  shrug:[stand,pose(stand,{1:[80,34],2:[80,53],3:[81,73]}),'front','db'],
+  legraise:[[[38,93],[51,100],[61,106],[72,106],[86,101],[118,89],[143,98]],[[38,93],[51,100],[61,106],[72,106],[86,101],[90,63],[115,65]],'side','floor'],
+  plank:[[[116,69],[104,80],[102,105],[121,105],[72,86],[49,93],[27,104]],[[118,58],[105,69],[103,105],[122,105],[73,76],[50,88],[28,103]],'side','floor'],
+  squat:[pose(stand,{2:[93,54],3:[85,36]}),[[87,44],[83,57],[97,65],[88,55],[69,80],[100,84],[81,105]],'side','smith'],
+  legpress:[[[42,66],[52,79],[57,93],[75,96],[74,96],[96,75],[112,60]],[[42,66],[52,79],[57,93],[75,96],[74,96],[83,70],[98,73]],'side','sled'],
+  split:[pose(stand,{4:[86,68],5:[101,84],6:[108,105]}),[[93,42],[91,56],[94,73],[95,94],[87,80],[108,88],[108,105]],'side','split'],
+  extension:[seated,pose(seated,{6:[132,79]}),'side','seat'],
+  abduct:[pose(seated,{4:[80,71],5:[67,83],6:[66,103]}),pose(seated,{4:[80,71],5:[52,81],6:[56,103]}),'front','seat'],
+  pulldown:[pose(seated,{2:[64,23],3:[62,10]}),pose(seated,{2:[58,57],3:[56,36]}),'front','lat'],
+  row:[[[116,38],[101,52],[99,74],[98,93],[64,62],[55,84],[47,104]],[[116,38],[101,52],[76,50],[80,66],[64,62],[55,84],[47,104]],'side','row'],
+  cablerow:[pose(seated,{2:[100,51],3:[126,54],5:[102,91],6:[132,98]}),pose(seated,{2:[66,57],3:[89,62],5:[102,91],6:[132,98]}),'side','lowcable'],
+  curl:[stand,pose(stand,{3:[98,44]}),'side','db'],
+  chest:[[[44,73],[59,77],[76,89],[76,66],[101,78],[119,91],[119,107]],[[44,73],[59,77],[69,52],[73,29],[101,78],[119,91],[119,107]],'side','benchdb'],
+  incline:[[[51,39],[62,55],[73,76],[84,54],[90,86],[115,89],[119,107]],[[51,39],[62,55],[76,41],[89,23],[90,86],[115,89],[119,107]],'side','inclinedb'],
+  fly:[pose(seated,{2:[53,49],3:[36,48],5:[64,84],6:[66,103]}),pose(seated,{2:[65,50],3:[77,51],5:[64,84],6:[66,103]}),'front','seat'],
+  pushdown:[pose(stand,{2:[86,57],3:[103,46]}),pose(stand,{2:[85,58],3:[91,79]}),'side','cable'],
+  overhead:[pose(stand,{2:[84,19],3:[65,34]}),pose(stand,{2:[84,19],3:[83,7]}),'side','db'],
+  rdl:[pose(stand,{2:[84,59],3:[90,77]}),[[110,50],[97,59],[95,76],[94,99],[60,66],[77,85],[76,105]],'side','db'],
+  legcurl:[[[39,52],[54,65],[46,83],[36,84],[91,65],[109,67],[139,70]],[[39,52],[54,65],[46,83],[36,84],[91,65],[109,67],[99,42]],'side','curlbench'],
+  lunge:[stand,[[92,45],[91,60],[94,78],[94,92],[85,84],[110,88],[110,105]],'side','lunge'],
+  calf:[pose(stand,{2:[95,51],3:[115,51]}),pose(stand,{0:[79,18],1:[79,33],2:[95,50],3:[115,51],4:[79,63],5:[80,80],6:[78,99]}),'side','calf'],
+  pullup:[hang,[[83,23],[83,38],[66,53],[64,22],[83,61],[89,70],[102,73]],'front','pullup'],
+  rear:[pose(seated,{2:[66,48],3:[72,45],5:[66,85],6:[65,103]}),pose(seated,{2:[53,46],3:[35,46],5:[66,85],6:[65,103]}),'front','seat'],
+  dip:[pose(hang,{0:[82,28],1:[80,43],2:[85,61],3:[83,77],4:[76,74]}),pose(hang,{0:[89,45],1:[85,59],2:[70,67],3:[83,77],4:[78,87]}),'side','dip']
+};
+
+function drawing(key,index, name) {
+  const [start,finish,view,equipment] = frames[key];
+  const points = index === 0 ? start : finish;
+  const [head,shoulder,elbow,wrist,hip,knee,ankle] = view==='front' && equipment==='db'
+    ? pose(points,{1:[73,points[1][1]],4:[74,points[4][1]],5:[71,points[5][1]],6:[69,points[6][1]]})
+    : points;
+  const line = (coords, color, width) => `<polyline points="${coords.map(point=>point.join(',')).join(' ')}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linecap="round" stroke-linejoin="round"/>`;
+  const gray = '#728173', light = '#e5eade', green = '#d0f879';
+  const mirror = p => [160-p[0],p[1]];
+  const foot = [ankle[0]+(view==='front'?-7:8),106];
+  const machine = {
+    floor:[[[22,110],[150,110]]], smith:[[[57,18],[57,106]],[[107,18],[107,106]],[[64,shoulder[1]],[97,shoulder[1]]]],
+    seat:[[[58,49],[58,79],[111,79]],[[76,79],[76,107]]],
+    sled:[[[32,60],[63,102],[90,102]],[[ankle[0]-7,ankle[1]-9],[ankle[0]+6,ankle[1]+6]],[[88,81],[130,42]]],
+    split:[[[34,104],[34,82],[64,82],[64,105]]], row:[[[100,79],[138,79]],[[106,80],[106,106]],[[130,80],[130,106]]],
+    cable:[[[141,24],[141,106]],[[141,key==='pushdown'?23:34],wrist]],
+    lowcable:[[[47,78],[91,78]],[[62,78],[62,106]],[[143,46],[143,105]],[[143,57],wrist]],
+    lat:[[[57,wrist[1]],[103,wrist[1]]],[[80,2],[80,wrist[1]]],[[62,80],[100,80]],[[81,80],[81,106]]],
+    benchdb:[[[40,82],[105,82]],[[49,82],[49,106]],[[95,82],[95,106]]],
+    inclinedb:[[[46,40],[88,91],[108,91]],[[78,80],[78,106]]],
+    curlbench:[[[37,71],[110,71]],[[48,73],[48,106]],[[94,73],[94,106]],[[109,68],ankle]],
+    calf:[[[115,49],[115,106]]], pullup:[[[50,22],[110,22]],[[48,20],[48,107]]],
+    dip:[[[65,77],[104,77],[104,106]],[[66,knee[1]+5],[99,knee[1]+5]]]
+  };
+  let backdrop = line([[19,110],[153,110]],'#37463a',1);
+  (machine[equipment]||[]).forEach(path=>{backdrop+=line(path,gray,2.5);});
+  const horizontal = ['legraise','plank','legpress','legcurl','pullup','dip','abduct','extension','cablerow','pulldown'].includes(key);
+  const footPoints = horizontal ? [ankle,[ankle[0]+6,ankle[1]-2]] : [ankle,foot];
+  let limbs = line([hip,knee,ankle],light,5)+line(footPoints,light,3)+line([shoulder,elbow,wrist],green,4.5);
+  if (view==='front') limbs += line([shoulder,mirror(shoulder)],light,5)+line([hip,mirror(hip)],light,6)+line([mirror(hip),mirror(knee),mirror(ankle)],light,5)+line(footPoints.map(mirror),light,3)+line([mirror(shoulder),mirror(elbow),mirror(wrist)],green,4.5);
+  if (key==='split' || key==='lunge') {
+    const back = key==='split' ? (index ? [[59,99],[54,82]] : [[67,80],[54,82]]) : (index ? [[66,101],[46,106]] : [[76,86],[73,105]]);
+    limbs += line([hip,...back],gray,4);
+  }
+  const dumbbell = tip => line([[tip[0]-6,tip[1]],[tip[0]+6,tip[1]]],green,2)+line([[tip[0]-5,tip[1]-3],[tip[0]-5,tip[1]+3]],green,3)+line([[tip[0]+5,tip[1]-3],[tip[0]+5,tip[1]+3]],green,3);
+  if (equipment.endsWith('db')) limbs += dumbbell(wrist)+(view==='front'?dumbbell(mirror(wrist)):'');
+  const label = key==='plank' && index ? 'Brace and hold' : (index ? 'Working position' : 'Start position');
+  const torso = view==='front' ? [head,[80,shoulder[1]],[80,hip[1]]] : [head,shoulder,hip];
+  return `<figure><svg viewBox="0 0 160 116" role="img" aria-label="${name}, ${label.toLowerCase()}">${backdrop}${line(torso,light,7)}${limbs}<circle cx="${head[0]}" cy="${head[1]}" r="7" fill="${light}" stroke="#222920" stroke-width="1.5"/></svg><figcaption>${label}</figcaption></figure>`;
+}
+
+const $ = id => document.getElementById(id);
+const storageKey = 'aravind-training-plan-v1';
+const planId = 'aravind-muscle-gain-60-v1';
+let data = {start:'', days:{}, review:null};
+const storageMessage = 'Browser storage is unavailable. Keep this tab open to retain this session.';
+function showStorageError() {
+  $('storage-status').hidden = false;
+  $('storage-status').textContent = storageMessage;
+}
+try {
+  const saved = JSON.parse(localStorage.getItem(storageKey));
+  if (saved && typeof saved==='object' && saved.days && typeof saved.days==='object') data = saved;
+} catch { showStorageError(); }
+function save() {
+  try { localStorage.setItem(storageKey,JSON.stringify(data)); return true; }
+  catch { showStorageError(); return false; }
+}
+function dateText(date) {
+  const parts = [date.getFullYear(),date.getMonth()+1,date.getDate()];
+  return parts.map((value,index)=>String(value).padStart(index?2:4,'0')).join('-');
+}
+const fullDate = new Intl.DateTimeFormat(undefined,{weekday:'long',month:'short',day:'numeric'});
+function calendarDate(day) {
+  if (!data.start) return '';
+  const [year,month,date] = data.start.split('-').map(Number);
+  const actual = new Date(year,month-1,date+day-1);
+  return Number.isNaN(+actual) ? '' : fullDate.format(actual);
+}
+const numbers = Array.from({length:60},(_,i)=>i+1);
+let day = numbers.find(number=>!data.days[number]?.done) || 60;
+let week = Math.ceil(day/7);
+const sessionAt = n => sessions[(n-1)%7];
+function render() {
+  const [title,muscles,note,exercises] = sessionAt(day);
+  const status = data.days[day] || {};
+  const count = numbers.filter(n=>data.days[n]?.done).length;
+  $('count').textContent = `${count} / 60`;
+  $('progress').value = count;
+  $('week').textContent = `Week ${week} of 9`;
+  $('prev').disabled = week===1;
+  $('next').disabled = week===9;
+  $('days').replaceChildren();
+  numbers.slice((week-1)*7,week*7).forEach(n=>{
+    const button = document.createElement('button');
+    const done = Boolean(data.days[n]?.done);
+    if (done) button.classList.add('done');
+    if (n%7===0) button.classList.add('rest');
+    button.type = 'button';
+    button.dataset.day = n;
+    button.textContent = done ? `${n} ✓` : n;
+    button.setAttribute('aria-current',String(n===day));
+    button.setAttribute('aria-label',`Day ${n}, ${sessionAt(n)[0]}${done?', complete':''}`);
+    $('days').append(button);
+  });
+  const [phase,body] = phases[week<=2?0:week<=6?1:week<=8?2:3];
+  $('phase-title').textContent = phase;
+  $('phase-text').textContent = body;
+  $('day-head').innerHTML = `<p class="tag">Day ${day} of 60</p><h2>${title}</h2><p><strong>Focus</strong> · ${muscles}</p><p class="muted">${note}</p>`;
+  const date = calendarDate(day);
+  if (date) $('day-head').firstElementChild.append(` · ${date}`);
+  $('exercise-list').innerHTML = exercises.map((id,index)=>{
+    const [name,target,sets,reps,instruction,cue,key,rest] = E[id];
+    const targetSets = week<=2 || day%7===6 ? 2 : sets;
+    return `<details class="exercise" ${index===0?'open':''}><summary><span><strong>${name}</strong><small>${targetSets} sets × ${reps} · ${target}</small></span></summary><div class="exercise-body"><div class="poses">${drawing(key,0,name)}${drawing(key,1,name)}</div><p><strong>How to do it</strong> · ${instruction}</p><p><strong>Form check</strong> · ${cue}</p><small>Rest about ${rest} sec between sets.</small></div></details>`;
+  }).join('');
+  $('log').value = status.log || '';
+  $('complete').textContent = status.done ? 'Undo completion' : 'Mark day complete';
+  $('complete').classList.toggle('primary',!status.done);
+  $('log-status').textContent = status.done ? 'Day complete' : '';
+}
+function selectDay(number, focus=false) {
+  day=number; week=Math.ceil(day/7); render();
+  if (focus) $('days').querySelector(`[data-day="${day}"]`).focus();
+}
+$('days').addEventListener('click',event=>{const button=event.target.closest('button'); if(button) selectDay(Number(button.dataset.day),true);});
+$('prev').addEventListener('click',()=>selectDay((week-2)*7+1));
+$('next').addEventListener('click',()=>selectDay(week*7+1));
+$('start').value=data.start || '';
+$('start').addEventListener('change',event=>{data.start=event.target.value; save(); render();});
+$('log').addEventListener('input',event=>{
+  data.days[day]={...data.days[day],log:event.target.value};
+  $('log-status').textContent=save()?'Log saved':'Log kept for this session';
+});
+$('complete').addEventListener('click',()=>{
+  data.days[day]={...data.days[day],done:!data.days[day]?.done};
+  const saved=save(); render();
+  if (!saved) $('log-status').textContent='Progress kept for this session';
+});
+
+function showTab(tab) {
+  document.querySelectorAll('[data-tab]').forEach(button=>{
+    const active=button.dataset.tab===tab;
+    button.setAttribute('aria-pressed',String(active));
+    $(button.dataset.tab).hidden=!active;
+  });
+}
+document.querySelector('nav').addEventListener('click',event=>{const button=event.target.closest('[data-tab]'); if(button) showTab(button.dataset.tab);});
+const reviewLines = sessions.map(([title,,,exercises],i)=>`Day ${i+1} — ${title}${exercises.length?' — '+exercises.map(id=>E[id][0]).join(', '):''}`);
+reviewLines.forEach(line=>{
+  const row=document.createElement('p'); row.className='plan-line';row.textContent=line;$('review-plan').append(row);
+});
+const inviteText = () => `Hi,\n\nCould you review my 60-day muscle-gain plan? Please check the weekly split, sets, recovery, and the two handwritten exercises called out under Recovery.\n\nOpen the attached aravind-60-day-gym-plan.html in your browser. Under Trainer review, enter your decision, corrections and typed acknowledgement, then export the signed review and send the JSON file back to me.\n\nThanks,\nAravind`;
+$('invite').addEventListener('click',()=>{
+  if(!$('email').value.trim()) { $('invite-status').textContent='Enter your trainer’s email address.'; $('email').focus(); return; }
+  if(!$('email').reportValidity()) return;
+  const recipient=encodeURIComponent($('email').value.trim()).replace('%40','@');
+  location.href=`mailto:${recipient}?subject=${encodeURIComponent('Review request — Aravind’s 60-day gym plan')}&body=${encodeURIComponent(inviteText())}`;
+  $('invite-status').textContent='Attach this HTML file to your draft before sending.';
+});
+$('copy-invite').addEventListener('click',async()=>{
+  try { await navigator.clipboard.writeText(inviteText()); $('invite-status').textContent='Invite text copied. Attach this HTML file before sending.'; }
+  catch { window.prompt('Copy the invite text below',inviteText()); }
+});
+const fields = {name:'trainer-name',date:'review-date',decision:'decision',notes:'review-notes',signature:'signature'};
+function loadReview(review) {
+  Object.entries(fields).forEach(([field,id])=>{$(id).value=review?.[field] || '';});
+  if (!$('review-date').value) $('review-date').value=dateText(new Date());
+}
+function validReview(review) {
+  return review?.planId===planId && ['Approved','Changes requested'].includes(review.decision)
+    && typeof review.date==='string' && /^\d{4}-\d{2}-\d{2}$/.test(review.date)
+    && !Number.isNaN(Date.parse(`${review.date}T00:00:00`))
+    && dateText(new Date(`${review.date}T00:00:00`))===review.date
+    && ['name','signature'].every(key=>typeof review[key]==='string' && review[key].trim() && review[key].length<=100)
+    && typeof review.notes==='string' && review.notes.length<=2000;
+}
+$('review-form').addEventListener('submit',event=>{
+  event.preventDefault();
+  const review={planId};
+  Object.entries(fields).forEach(([field,id])=>{review[field]=$(id).value.trim();});
+  if (!validReview(review)) { $('review-status').textContent='Enter a trainer name, valid date, decision, and typed signature.'; return; }
+  data.review=review; save();
+  const url=URL.createObjectURL(new Blob([JSON.stringify(review,null,2)],{type:'application/json'}));
+  const link=document.createElement('a'); link.href=url; link.download='aravind-trainer-review.json'; link.click();
+  setTimeout(()=>URL.revokeObjectURL(url),2000);
+  $('review-status').textContent=`Signed review exported · ${review.decision}`;
+});
+$('import-review').addEventListener('change',async event=>{
+  const file=event.target.files[0];
+  if(!file) return;
+  try {
+    if (file.size>20000) throw new Error('Review file is too large.');
+    const imported=JSON.parse(await file.text());
+    if (!validReview(imported)) throw new Error('Review does not match the plan.');
+    const review={planId};
+    Object.keys(fields).forEach(field=>{review[field]=imported[field];});
+    data.review=review; save(); loadReview(review);
+    $('review-status').textContent=`Review imported · ${review.decision} by ${review.name}`;
+  } catch { $('review-status').textContent='Choose a valid review JSON exported from this plan.'; }
+  event.target.value='';
+});
+$('print-review').addEventListener('click',()=>window.print());
+loadReview(data.review);
+render();
+</script>
